@@ -684,7 +684,6 @@ footer p i{
 
 
 
-
 @media(max-width: 1024px){
 
     
@@ -879,7 +878,7 @@ footer p i{
     #btn-2{
         width: 60%;
     }
-}
+
     /* fin sección presentación*/
 
     /* Comienzo sección conocimientos*/
@@ -930,7 +929,7 @@ footer p i{
         height: 90%;
         border: 1px solid white;
     }
-    
+
     #escribime{
         width: 90%;
         text-align: center;
@@ -957,10 +956,9 @@ footer p i{
             }
     /*fin footer*/
 
-
+}
 
 
 
 
     
-}
