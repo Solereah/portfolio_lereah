@@ -16,9 +16,11 @@
 
 body{
     width: 100vw;
+    height: 100vh;
     font-family: "Poppins", sans-serif;
     font-size: 1.5rem;
-    text-align: center; 
+    text-align: center;
+
    
 }
 
@@ -32,6 +34,7 @@ a{
 }
 
 /*Comienzo del encabezado*/ 
+
 header{
     width: 100%;
     height: 3.5em;
@@ -58,9 +61,9 @@ nav{
 nav a{
     display: flex;
     justify-content: space-around;
-    border-radius: 30px;
+    border-radius: 1.8em;
     text-transform: uppercase;
-    color:rgb(57,62,70);
+    color:#1f2833;
     font-size: 1rem;
     letter-spacing: 1px;
   
@@ -69,18 +72,18 @@ nav a{
 nav .btn-hola{
     width: 11%;
     height: 70%;
-    padding: 4px;
+    padding: 0.25em; 
 }
 
 nav .btn-conocimiento{
     width: 28%;
     height: 70%;
-    padding: 4px;
+    padding: 0.25em;
 }
 nav .btn-proyecto{
     width: 21%;
     height: 70%;
-    padding: 4px;
+    padding: 0.25em;
 }
 
 nav a:link{
@@ -99,11 +102,11 @@ nav a:active{
 .btn-link{
     width: 23%;
     height: 80%;
-    padding: 6px;
+    padding: 0.3em;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 30px;
+    border-radius: 1.8em;
     background-color: var(--color-primario);
     color: var(--color-fuente1);
   
@@ -148,7 +151,7 @@ main{
     font-size: 4rem;
     font-weight: 800;
     letter-spacing: 1px;
-    margin-bottom: 30px;
+    margin-bottom: 0.3em;
 
 }
 
@@ -167,9 +170,9 @@ main{
     color: var(--color-fuente1);
     text-transform: uppercase;
     font-size: 1rem;
-    border-radius: 30px;
-    margin-top: 40px;
-    padding: 15px;
+    border-radius: 1.8em;
+    margin-top: 2.5em;
+    padding: 1em;
 }
 
 #btn-2:hover{
@@ -229,7 +232,6 @@ main{
 
 #contenedor-grilla-1{
     width: 40em;
-    margin: 0 auto;
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
@@ -239,7 +241,7 @@ main{
 .lenguajes{
     width:10.5em;
     height:10em; 
-    margin:0.5em;
+    margin: 0.3em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -339,12 +341,12 @@ blockquote p{
 .link-proyectos{
     width: 13em;
     height: 13em;
-    margin: 10px;
+    margin: 0.3em;
     display: flex;
     justify-content:space-around;
     align-items:center;
     flex-direction: column;
-    border-radius: 7px;
+    border-radius: 0.4em;
     background-color: #1f2833; 
     border: 1.5px solid rgb(115, 118, 122);
     box-shadow: 0px 0px 3px black;
@@ -435,8 +437,8 @@ blockquote p{
 .contacto-redes .icono-form{
     width: 1.7em;
     height: 1.7em;
-    margin: 10px;
-    padding-top: 3px;
+    margin: 0.6em;
+    padding-top: 0.2em;
     border-radius: 50%;
     text-align: center;
 }
@@ -449,7 +451,7 @@ blockquote p{
 
 
 #btn-mail{
-    width: 42%;
+    width: 43%;
 }
 
 .icono-form{
@@ -507,7 +509,7 @@ label{
 input, textarea{
     border: 0;
     outline: none;
-    margin-top: 5px;
+    margin-top: 0.3em;
 }
 
 #nombre-apellido{
@@ -518,29 +520,29 @@ input, textarea{
 #nombre-apellido input[type="text"]{
     max-width: 15em;
     width: 100%;
-    height: 35px;
-    padding: 5px;
-    border-radius: 50px;
+    height: 3em;
+    padding: 0.3em;
+    border-radius: 3.1em;
     
 }
 
 form input[type="email"]{
     width: 90%;
-    height: 35px;
-    padding: 5px;
-    border-radius: 50px;
+    height: 3em;
+    padding: 0.3em;
+    border-radius: 3.1em;
 }
 
 textarea{
     width: 100%;
-    margin-bottom: 10px;
-    padding-left: 10px;
-    padding-top: 10px;
-    border-radius: 15px;
+    margin-bottom: 0.6em;
+    padding-left: 0.6em;
+    padding-top: 0.6em;
+    border-radius: 1em;
 }
 
 input::placeholder{
-    padding-left: 10px;
+    padding-left: 0.6em;
 }
 
 #nombre-apellido input[type="text"]:focus{
@@ -577,9 +579,9 @@ form input[type="email"]:invalid,textarea:invalid{
 form input[type="submit"]{
     max-width: 120px;
     width: 100%;
-    height: 40px;
-    margin: 15 0;
-    border-radius: 50px;
+    height: 2.5em;
+    margin: 1em 0;
+    border-radius: 3.1em;
     background-color: var(--color-primario);
     font-size: 1.2rem;
     color: var(--color-fuente1);
@@ -626,7 +628,7 @@ display: inline;
 }
 
 .footer-nav> ul> li> a{
-    margin: 5px;
+    margin: 0.3em;
     color: var(--color-fuente1);
     text-transform: uppercase;
     font-size: 1rem;
@@ -641,10 +643,10 @@ display: inline;
 .contenedor-icono{
     width: 2em;
     height: 2em;
-    margin: 10px;
+    margin: 0.6em;
     background-color: var(--color-fuente1);
     border-radius: 50%;
-    padding-top: 6px;
+    padding-top: 0.3em;
 }
 
 .icono-redes{
@@ -675,12 +677,48 @@ footer p i{
     color:rgb(218,0,55);
 }
 
+@media(max-width: 1800px){
+    header nav{
+        display:flex ;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+}
 
 
+@media(max-width: 1024px){
 
-@media 1024px (max-width){
+    
+}
+
+@media(max-width: 768px){
+
+    header{
+        display: none;
+    }
+
+    #section-hola{
+            display: flex;
+            flex-direction: column;
+}
+
+    section{
+        display: flex;
+    
+        text-align: center;
+}
+    .titulo-seccion{
+        text-align:justify;
+        text-;
+    }
+}
+@media(max-width: 480px){
 
 
+}
 
-
+@media(max-width: 320px){
+    
 }
