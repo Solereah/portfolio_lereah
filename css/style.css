@@ -228,7 +228,7 @@ main{
   
 }
 
-    /*contendor padre de la grilla de conocimientos*/
+/*contendor padre de la grilla de conocimientos*/
 
 #contenedor-grilla-1{
     width: 40em;
@@ -274,7 +274,6 @@ main{
 
 /*comienzo de la sección cita*/
 
-    /*contenedor padre de sección cita*/
 #contenedor-cita{
     width: 100%;
     height: 23em;
@@ -401,7 +400,6 @@ blockquote p{
 
 #contactame{
     width: 50%;
-  
     margin: 0 auto;
     padding: 3em 2em ;
     text-align: start;
@@ -697,32 +695,272 @@ footer p i{
     header{
         display: none;
     }
+    
+    /* comienzo sección presentación*/
 
     #section-hola{
-            display: flex;
-            flex-direction: column;
-}
+        display: flex;
+        flex-direction: column;
+    }
+    /* fin sección presentación*/
 
-.titulo-seccion{
-    width: 70%;  
-    margin: 0 auto;
-    border: 1px solid;
-   display: flex;
-   flex-direction: column;
+    /* Comienzo sección conocimientos*/
+
+    .conocimientos{
+        height: 50%;
+        margin: 0 auto;
+        padding-bottom: 2.5em;
+    }
+
+    .titulo-seccion{
+        width: 70%;  
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
   
-}
-.titulo-seccion h2{
-    width: 80%;
-    padding-top: 1em;
-    border: 1px solid teal;
-}
+    }
+    .titulo-seccion h2{
+        width: 80%;
+        padding-top: 1em;
+    }
 
+    .titulo-seccion p{
+        width: 80%;
+    }
+
+    #contenedor-grilla-1{
+        width: 70%;
+    }
+    /* fin sección conocimientos*/
+ 
+    /* comienzo sección proyectos*/
+
+    .proyectos{
+        height: 50%;
+        padding-bottom: 0.5em;
+    }
+    .contenedor-grilla-2{
+        width: 86%;
+       
+    }
+
+    /* fin sección proyectos*/
+
+    /*comienzo sección formulario*/
+    .seccion-contacto{
+        height: 30%;
+        padding-top: 2.5em;
+     
+    }
+
+    .formulario-contacto{
+        width: 90%;
+        height: 90%;
+        flex-direction: column;
+    }
+
+    #contactame{
+        width: 90%;
+        height: 60%;
+        padding-top: 2em;
+    }
+    #contactame ul{
+        display: flex;
+        justify-content:center;
+    }
+
+    #escribime{
+        width: 90%;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    /*fin sección formulario*/
+
+    /*Comienzo footer*/
+
+    .footer-nav{
+        width:70%;
+            }
+    /*fin footer*/
 }
+   
+
 @media(max-width: 480px){
 
+ /* comienzo sección presentación*/
+
+    
+    .quien_soy img,  .sobre-mi{
+        width: 80%;
+        
+            }
+    
+    #btn-2{
+        width: 40%;
+
+    }
+    /* fin sección presentación*/
+
+    /* Comienzo sección conocimientos*/
+
+
+    .titulo-seccion{
+        width: 90%;  
+        margin: 0 auto;
+    }
+
+    .titulo-seccion h2{
+        width: 80%;
+        font-size: 2.5rem;
+    }
+
+    .titulo-seccion p{
+        width: 80%;
+    }
+
+    #contenedor-grilla-1{
+        width: 70%;
+    }
+    /* fin sección conocimientos*/
+ 
+    /* comienzo sección proyectos*/
+
+    .proyectos{
+        height: 50%;   
+    }
+
+    .contenedor-grilla-2{
+        width: 70%;  
+    }
+
+    /* fin sección proyectos*/
+
+    /*comienzo sección formulario*/
+
+    #contactame ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    #nombre-apellido{
+        flex-wrap: wrap;  
+    }
+
+
+
+    /*fin sección formulario*/
+
+    /*Comienzo footer*/
+
+    .footer-nav{
+        width:100%;
+            }
+    /*fin footer*/
 
 }
 
+
+
 @media(max-width: 320px){
+    /* comienzo sección presentación*/
+
+    .quien_soy img,  .sobre-mi{
+        width: 85%;
+   
+    }
+
+    .sobre-mi{
+        display: flex;
+        align-items: center;
+    }
+        
+    #btn-2{
+        width: 60%;
+    }
+}
+    /* fin sección presentación*/
+
+    /* Comienzo sección conocimientos*/
+
+
+    .titulo-seccion{
+        width: 90%;  
+        margin: 0 auto;
+    }
+
+    .titulo-seccion h2{
+        font-size: 1.9rem;
+    }
+
+    .titulo-seccion p{
+        width: 90%;
+    }
+    /* fin sección conocimientos*/
+ 
+    /* comienzo sección proyectos*/
+
+    .proyectos{
+        height: 50%;   
+    }
+
+    .contenedor-grilla-2{
+        width: 70%;  
+    }
+
+    /* fin sección proyectos*/
+
+    /*comienzo sección formulario*/
+
+    #contactame{
+    width: 100%;
+    border: 1px solid white;
+    text-align: center;
+
+    }
+
+    #contactame h2{ 
+        width: 90%;
+        font-size: 2rem;
+    }
+
+    #contactame p{
+        width:100%;
+        height: 90%;
+        border: 1px solid white;
+    }
+    
+    #escribime{
+        width: 90%;
+        text-align: center;
+    }
+    #escribime h2{
+        font-size: 2rem;
+    }
+    
+    #nombre-apellido input[type="text"], form input[type="email"]{
+        width: 100%;
+        
+    }
+    textarea{
+        width: 100%;
+        height: 90%;
+    }
+
+    /*fin sección formulario*/
+
+    /*Comienzo footer*/
+
+    .footer-nav{
+        display: none;
+            }
+    /*fin footer*/
+
+
+
+
+
+
     
 }
