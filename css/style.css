@@ -45,10 +45,6 @@ header{
     position: fixed;
     top:0;  
     box-shadow: 0px 2px 20px black;
-      /*display: flex;
-    align-items: center;
-    justify-content:flex-end;
-    */
 }
 
 /*barra de navegación*/
@@ -96,7 +92,7 @@ nav .btn-proyecto{
     justify-content: center;
 }
 
-nav a:link{
+nav a:link, nav a:visited{
     color: var(--color-secundario)
 }
 
@@ -109,6 +105,8 @@ nav a:active{
     box-shadow: 0px 0px 10px var(--color-primario);
 }
 
+
+
 .btn-link{
     width: 9%;
     height: 50%;
@@ -116,18 +114,25 @@ nav a:active{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 1.8em;
-    background-color: var(--color-primario);
     color: var(--color-fuente1);
-  
+    border-radius: 1.8em;
+    background-color: var(--color-primario); 
+}
+
+.btn-link:link, .btn-link:visited{
+    color: var(--color-fuente1);
 }
 
 .btn-link:hover{
     background-color: rgba(92, 234, 241, 0.9);
     color: var(--color-fuente1);
     transition: background-color 1s;
-
 }
+.btn-link:active{
+    box-shadow: 0px 0px 10px var(--color-primario);
+}
+   
+
 /* Fin del encabezado y la barra de navegación*/
 
 /*Comienzo del contenido principal*/
@@ -139,6 +144,7 @@ main{
 
 /* Comienzo de la sección de presentación*/
 
+    /*Caja padre de la secció*/
 .quien_soy{
     width: 100%;
     height: 40em;
@@ -147,13 +153,14 @@ main{
     justify-content: space-evenly;
     background-color:var(--color-secundario);
 }
+    /*fin de la caja padre*/
+
+    /*primer article de la sección*/
 
 .sobre-mi{
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
-   
-    
+    align-items:flex-start;       
 }
 
 .sobre-mi h1{
@@ -169,7 +176,9 @@ main{
     color: var(--color-fuente1);
   
 }
+    /*Fin del primer article de la sección*/
 
+    /*propiedades del boton "Lo que hago"*/ 
 
 #btn-2{
     width: 30%;
@@ -183,6 +192,9 @@ main{
     border-radius: 1.8em;
     margin-top: 2.5em;
     padding: 1em;
+}
+#btn-2:link, #btn-2:visited{
+    color: var(--color-fuente1);
 }
 
 #btn-2:hover{
@@ -209,11 +221,12 @@ main{
     flex-direction: column;
     align-items: center;
     color: var(--color-secundario);
-    background-color:  #c5c6c7;
-       
+    background-color:  #c5c6c7;     
 }
+    /*Fin caja padre de la sección*/
 
-/*titulo y párrafo*/
+    /*titulo y párrafo*/
+
 .titulo-seccion{
     width: 35%;
 }
@@ -237,16 +250,17 @@ main{
     color: var(--color-secundario);
   
 }
+    /*Fin del titulo y párrafo*/
 
-/*contendor padre de la grilla de conocimientos*/
+    /*contendor padre de la grilla de conocimientos*/
 
 #contenedor-grilla-1{
     width: 40em;
     display: flex;
     justify-content:center;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;    
 }
+    /*Fin del contenedor padre de la grilla conocimientos*/ 
 
 .lenguajes{
     width:10.5em;
@@ -284,6 +298,7 @@ main{
 
 /*comienzo de la sección cita*/
 
+    /*caje padre de sección cita*/
 #contenedor-cita{
     width: 100%;
     height: 23em;
@@ -293,15 +308,16 @@ main{
     flex-direction: column;
     background-color: var(--color-primario);  
 }
-
+    /*Fin de la caje padre de la seccón cita*/
+    
+    /*Ícono de comillas*/
 .comillas{
     margin-top: 1.2em;
     margin-bottom: 0.7em;
     color: var(--color-secundario);
-    font-size: 5rem;
-   
+    font-size: 5rem;  
 }
-
+    /* Propiedades de la cita*/
 blockquote{
     width: 40vw;
 }
@@ -314,7 +330,6 @@ blockquote p{
     margin-top: 1.2em;
     font-weight: 700;
     color: var(--color-secundario);
-
 }
 
 /*fin de la sección cita*/
@@ -330,6 +345,7 @@ blockquote p{
     color: var(--color-secundario);    
   
 }
+    /*Fin del contedor padre de la sección proyectos*/
 
 .proyectos>.titulo-seccion{
     margin: 0 auto;
@@ -378,10 +394,6 @@ blockquote p{
     box-shadow: 0px 0px 30px var(--color-primario);
 }
 
-
-
-
-
 /*Fin de la sección conocimientos*/
 
 /*Comienzo del formulario de contacto*/
@@ -396,6 +408,8 @@ blockquote p{
     display: flex;  
     justify-content: center;
 }
+    /*Fin del contenedor padre del fomrulario*/
+
 
 .formulario-contacto{
     width: 62%;
@@ -466,6 +480,9 @@ blockquote p{
     color: var(--color-primario);
 }
 
+.contacto-redes:link, .contacto-redes:visited{
+    color: var(--color-primario);
+}
 .contacto-redes:hover h4{
     color: var(--color-fuente1); 
 }
@@ -474,7 +491,6 @@ blockquote p{
     color:white;
     background-color: var(--color-primario);  
 }
-
 
 .contacto-redes:active{
     box-shadow: 0px 0px 30px var(--color-primario);
@@ -600,6 +616,10 @@ form input[type="submit"]{
 
 }
 
+form input[type="submit"]:link, form input[type="submit"]:visited{
+    color: var(--color-fuente1);
+}
+
 form input[type="submit"]:hover{
     background-color: rgba(92, 234, 241, 0.9);
     color: var(--color-fuente1);
@@ -660,12 +680,7 @@ display: inline;
     padding-top: 0.3em;
 }
 
-.icono-redes{
-    color: var(--color-secundario);
-}
-
-
-.icono-redes:visited{
+.icono-redes:link, .icono-redes:visited{
     color: var(--color-primario);
 }
 
@@ -697,12 +712,70 @@ footer p i{
 
 @media(max-width: 1024px){
 
-  
-}
+    /*Barra de navegación*/
+    nav{
+    margin: 0 auto;
+        display: flex;
+        align-items:center;
+        justify-content: space-evenly;
+        
+       }
+       .btn-link{
+           width: 20%;
+       }
+    /*Sección de presentación*/
+    .quien_soy{ 
+        padding: 2em;
+    }
+
+    #btn-2{
+        width: 50%;
+    }
+    /*Sección conocimientos*/
+    .conocimientos{
+        height: 70%;
+    }
+
+    .titulo-seccion{
+        width: 100%;
+        padding-top: 0.3em;
+       
+    }
+    .titulo-seccion h2{
+        width: 50%;
+        padding-top: 1em;
+       
+    }
+    .titulo-seccion p{
+        width: 70%;
    
-    
+    }
+
+ 
+   /*Sección cita*/
+   .comillas{
+    margin-top: 0.3em;
+   }
+
+   /*Sección mis proyectos*/
+   .contenedor-grilla-2{
+       width: 64%;
+   
+   }
+   /* Sección formulario*/
+   .formulario-contacto{
+       width: 90%;
+   }
+    /*sección footer*/
+
+    .footer-nav{
+    width: 100%;
+    }
+}
+
 
 @media(max-width: 768px){
+    /*seccion ecabezado*/
 
     header{
         display: none;
@@ -714,7 +787,6 @@ footer p i{
         display: flex;
         flex-direction: column;
     }
-    /* fin sección presentación*/
 
     /* Comienzo sección conocimientos*/
 
@@ -743,7 +815,6 @@ footer p i{
     #contenedor-grilla-1{
         width: 70%;
     }
-    /* fin sección conocimientos*/
  
     /* comienzo sección proyectos*/
 
@@ -755,8 +826,6 @@ footer p i{
         width: 86%;
        
     }
-
-    /* fin sección proyectos*/
 
     /*comienzo sección formulario*/
     .seccion-contacto{
@@ -787,14 +856,11 @@ footer p i{
         padding-bottom: 1em;
     }
 
-    /*fin sección formulario*/
-
     /*Comienzo footer*/
 
     .footer-nav{
         width:70%;
             }
-    /*fin footer*/
 }
    
 
@@ -802,20 +868,16 @@ footer p i{
 
  /* comienzo sección presentación*/
 
-    
     .quien_soy img,  .sobre-mi{
         width: 80%;
         
-            }
+        }
     
     #btn-2{
         width: 40%;
 
     }
-    /* fin sección presentación*/
-
     /* Comienzo sección conocimientos*/
-
 
     .titulo-seccion{
         width: 90%;  
@@ -834,7 +896,6 @@ footer p i{
     #contenedor-grilla-1{
         width: 70%;
     }
-    /* fin sección conocimientos*/
  
     /* comienzo sección proyectos*/
 
@@ -846,8 +907,6 @@ footer p i{
         width: 70%;  
     }
 
-    /* fin sección proyectos*/
-
     /*comienzo sección formulario*/
 
     #contactame ul{
@@ -855,24 +914,18 @@ footer p i{
         flex-direction: column;
     }
 
-
     #nombre-apellido{
         flex-wrap: wrap;  
     }
 
-
-
-    /*fin sección formulario*/
-
     /*Comienzo footer*/
 
     .footer-nav{
-        width:100%;
+        width: 90%;
             }
     /*fin footer*/
 
 }
-
 
 
 @media(max-width: 320px){
@@ -892,8 +945,6 @@ footer p i{
         width: 60%;
     }
 
-    /* fin sección presentación*/
-
     /* Comienzo sección conocimientos*/
 
 
@@ -909,7 +960,6 @@ footer p i{
     .titulo-seccion p{
         width: 90%;
     }
-    /* fin sección conocimientos*/
  
     /* comienzo sección proyectos*/
 
@@ -921,9 +971,11 @@ footer p i{
         width: 70%;  
     }
 
-    /* fin sección proyectos*/
 
     /*comienzo sección formulario*/
+    .seccion-contacto{
+    margin-bottom: 2em; 
+    }
 
     #contactame{
     width: 100%;
@@ -958,12 +1010,18 @@ footer p i{
         height: 90%;
     }
 
-    /*fin sección formulario*/
 
     /*Comienzo footer*/
+    footer{
+        height: 40%;
+    }
 
     .footer-nav{
         display: none;
+            }
+        #links-contacto{
+            flex-direction: column;
+            align-items: center;
             }
     /*fin footer*/
 
