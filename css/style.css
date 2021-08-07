@@ -480,7 +480,7 @@ blockquote p{
     color: var(--color-primario);
 }
 
-.contacto-redes:link, .contacto-redes:visited{
+.contacto-redes:link, .contacto-redes:visited, .icono-form:link, .icono-form:visited{
     color: var(--color-primario);
 }
 .contacto-redes:hover h4{
