@@ -1046,10 +1046,10 @@ footer p i{
     .footer-nav{
         display: none;
             }
-        #links-contacto{
-            border: 1px solid red;
-            flex-direction: column;
-            align-items: center;
+
+    #links-contacto{
+        flex-direction: column;
+        align-items: center;
             }
     /*fin footer*/
 
